@@ -3,7 +3,7 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 st.write("# Real Time Sentiment Analysis")
 
-user_input = st.text_input("Please rate our services >>: ")
+user_input = st.text_input("Please rate our services : ")
 nltk.download("vader_lexicon")
 s = SentimentIntensityAnalyzer()
 score = s.polarity_scores(user_input)
